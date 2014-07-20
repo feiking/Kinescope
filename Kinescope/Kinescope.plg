@@ -1,0 +1,67 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Kinescope - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\feifei\AppData\Local\Temp\RSP27EB.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/Kinescope.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"F:\programming\VisualStudio\ÆÁÄ»Â¼ÏñÄ£¿é\Kinescope\CoalitionDlg.cpp"
+"F:\programming\VisualStudio\ÆÁÄ»Â¼ÏñÄ£¿é\Kinescope\CutDlg.cpp"
+"F:\programming\VisualStudio\ÆÁÄ»Â¼ÏñÄ£¿é\Kinescope\FrameDlg.cpp"
+"F:\programming\VisualStudio\ÆÁÄ»Â¼ÏñÄ£¿é\Kinescope\Kinescope.cpp"
+"F:\programming\VisualStudio\ÆÁÄ»Â¼ÏñÄ£¿é\Kinescope\KinescopeDlg.cpp"
+"F:\programming\VisualStudio\ÆÁÄ»Â¼ÏñÄ£¿é\Kinescope\NameDlg.cpp"
+]
+Creating command line "cl.exe @C:\Users\feifei\AppData\Local\Temp\RSP27EB.tmp" 
+Creating temporary file "C:\Users\feifei\AppData\Local\Temp\RSP27EC.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/Kinescope.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"F:\programming\VisualStudio\ÆÁÄ»Â¼ÏñÄ£¿é\Kinescope\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\feifei\AppData\Local\Temp\RSP27EC.tmp" 
+Creating temporary file "C:\Users\feifei\AppData\Local\Temp\RSP27FD.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/Kinescope.pdb" /debug /machine:I386 /out:"Debug/Kinescope.exe" /pdbtype:sept 
+".\Debug\CoalitionDlg.obj"
+".\Debug\CutDlg.obj"
+".\Debug\FrameDlg.obj"
+".\Debug\Kinescope.obj"
+".\Debug\KinescopeDlg.obj"
+".\Debug\NameDlg.obj"
+".\Debug\StdAfx.obj"
+".\Debug\Kinescope.res"
+]
+Creating command line "link.exe @C:\Users\feifei\AppData\Local\Temp\RSP27FD.tmp"
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+CoalitionDlg.cpp
+CutDlg.cpp
+FrameDlg.cpp
+F:\programming\VisualStudio\ÆÁÄ»Â¼ÏñÄ£¿é\Kinescope\FrameDlg.cpp(56) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+F:\programming\VisualStudio\ÆÁÄ»Â¼ÏñÄ£¿é\Kinescope\FrameDlg.cpp(114) : warning C4146: unary minus operator applied to unsigned type, result still unsigned
+KinescopeDlg.cpp
+F:\programming\VisualStudio\ÆÁÄ»Â¼ÏñÄ£¿é\Kinescope\KinescopeDlg.cpp(419) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+F:\programming\VisualStudio\ÆÁÄ»Â¼ÏñÄ£¿é\Kinescope\KinescopeDlg.cpp(513) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+NameDlg.cpp
+Generating Code...
+Compiling...
+Kinescope.cpp
+Generating Code...
+Linking...
+Creating command line "bscmake.exe /nologo /o"Debug/Kinescope.bsc"  ".\Debug\StdAfx.sbr" ".\Debug\CoalitionDlg.sbr" ".\Debug\CutDlg.sbr" ".\Debug\FrameDlg.sbr" ".\Debug\Kinescope.sbr" ".\Debug\KinescopeDlg.sbr" ".\Debug\NameDlg.sbr""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+Kinescope.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

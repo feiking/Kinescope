@@ -1,0 +1,332 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Kinescope.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Kinescope.ico"
+IDI_ICONSTART           ICON    DISCARDABLE     "res\\开始.ico"
+IDI_ICONPAUSE           ICON    DISCARDABLE     "res\\暂停.ico"
+IDI_ICONSTOP            ICON    DISCARDABLE     "res\\停止.ico"
+IDI_ICONEXIT            ICON    DISCARDABLE     "res\\退出.ico"
+IDI_ICONCUT             ICON    DISCARDABLE     "res\\剪切.ico"
+IDI_ICONCOALITION       ICON    DISCARDABLE     "res\\合成.ico"
+IDI_ICONGRASP           ICON    DISCARDABLE     "res\\抓图.ico"
+IDI_ICONTIME            ICON    DISCARDABLE     "res\\时间.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 Kinescope"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Kinescope 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2008",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_KINESCOPE_DIALOG DIALOGEX 0, 0, 529, 365
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "屏幕录像"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "录像文件名：",IDC_STATIC,20,49,49,8
+    EDITTEXT        IDC_EDIT1,73,47,50,12,ES_AUTOHSCROLL
+    LTEXT           "文件保存路径：",IDC_STATIC,135,49,57,8
+    EDITTEXT        IDC_EDIT2,195,47,244,12,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "选择",IDC_BUTSELECT,458,46,50,14
+    GROUPBOX        "文件设置",IDC_STATIC,5,31,517,68
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_LIST | WS_BORDER | 
+                    WS_TABSTOP,18,117,82,226
+    GROUPBOX        "录像文件",IDC_STATIC,5,106,517,244
+    CONTROL         "",IDC_FRAME,"Static",SS_BLACKFRAME,108,117,405,225
+    CONTROL         "",IDC_PICTURE,"Static",SS_BITMAP,109,118,15,14
+    LTEXT           "剩余空间：",IDC_STATICPLACE,385,76,68,8
+    EDITTEXT        IDC_EDIT3,73,73,24,12,ES_AUTOHSCROLL
+    LTEXT           "录像帧数：",IDC_STATIC,20,75,41,8
+    CONTROL         "抓取鼠标",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,458,74,48,10
+    LTEXT           "帧/秒   建议每秒不超过5帧",IDC_STATIC,102,76,101,8
+    LTEXT           "F2：开始、结束录制/F3：暂停/F4：抓图",IDC_STATIC,220,76,
+                    145,8
+END
+
+IDD_FRAME_DIALOG DIALOG DISCARDABLE  0, 0, 187, 100
+STYLE WS_CHILD | WS_VSCROLL | WS_HSCROLL
+FONT 9, "宋体"
+BEGIN
+END
+
+IDD_NAME_DIALOG DIALOG DISCARDABLE  0, 0, 187, 89
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "重命名文件"
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDIT1,35,29,118,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,35,61,50,14
+    PUSHBUTTON      "取消",IDCANCEL,103,61,50,14
+    GROUPBOX        "请输入新文件名",IDC_STATIC,17,13,154,41
+END
+
+IDD_CUT_DIALOG DIALOG DISCARDABLE  0, 0, 423, 289
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "录像截取"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "总帧数：",IDC_STATICRATE,10,269,57,8
+    EDITTEXT        IDC_EDIT1,78,268,30,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "定位",IDC_BUTGOTO,113,267,35,14
+    PUSHBUTTON      "前一帧",IDC_BUTPREVIOUS,160,267,35,14
+    PUSHBUTTON      "下一帧",IDC_BUTNEXT,203,267,35,14
+    PUSHBUTTON      "截取",IDC_BUTCUT,334,267,35,14
+    PUSHBUTTON      "关闭",IDC_BUTEXIT,375,267,35,14
+    CONTROL         "",IDC_STATICFRAME,"Static",SS_BLACKFRAME,0,0,423,257
+    CONTROL         "",IDC_PICTURE,"Static",SS_BITMAP,1,1,20,20
+    PUSHBUTTON      "定义头",IDC_BUTSTART,250,267,35,14
+    PUSHBUTTON      "定义尾",IDC_BUTSTOP,289,267,35,14
+END
+
+IDD_COALITION_DIALOG DIALOG DISCARDABLE  0, 0, 308, 167
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "录像合成"
+FONT 9, "宋体"
+BEGIN
+    LISTBOX         IDC_LIST1,7,6,240,155,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "加入",IDC_BUTADD,259,7,39,14
+    PUSHBUTTON      "去除",IDC_BUTDEL,259,30,39,14
+    PUSHBUTTON      "清空",IDC_BUTCLEAR,259,53,39,14
+    PUSHBUTTON      "上移",IDC_BUTUP,259,76,39,14
+    PUSHBUTTON      "下移",IDC_BUTDOWN,259,99,39,14
+    PUSHBUTTON      "合成",IDC_BUTCOALITION,259,122,39,14
+    PUSHBUTTON      "退出",IDC_BUTEXIT,259,145,39,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Kinescope Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Kinescope\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2008\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Kinescope.EXE\0"
+            VALUE "ProductName", "Kinescope 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_KINESCOPE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 522
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 358
+    END
+
+    IDD_FRAME_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 170
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 82
+    END
+
+    IDD_NAME_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 82
+    END
+
+    IDD_CUT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 416
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 282
+    END
+
+    IDD_COALITION_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 301
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 160
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_LISTMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "列表菜单"
+    BEGIN
+        MENUITEM "播放",                        ID_MENUPLAY
+        MENUITEM "重命名",                      ID_MENUNAME
+        MENUITEM "另存为",                      ID_MENUSAVE
+        MENUITEM "查看时间",                    ID_MENUTIME
+        MENUITEM "删除",                        ID_MENUDELETE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 Kinescope(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\Kinescope.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
